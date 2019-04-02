@@ -118,3 +118,26 @@ add this to the bottom of body in `client/public/index.html`
 ```HTML
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 ```
+
+### Database time!
+
+Take this out of the seed file:
+
+```Ruby
+if Rails.env.development?
+```
+
+this works in Atom but not Code???
+
+```Bash
+rails g scaffold Topic title:string
+rails g scaffold Fact topic:references quote:string
+```
+
+app/models/topic.rb
+
+```Ruby
+class Topic < ApplicationRecord
+  has_many :facts
+end
+```
