@@ -68,7 +68,7 @@ facts = [
 {topic_id: 1, quote: "His blood smells like cologne."},
 {topic_id: 1, quote: "On every continent in the world, there is a sandwich named after him."},
 {topic_id: 1, quote: "Mosquitoes refuse to bite him purely out of respect."},
-{topic_id: 1, quote: "He is fluent in all languages, including three that he only speaks."},
+{topic_id: 1, quote: "He is fluent in all languages, including three that only he speaks."},
 {topic_id: 1, quote: "Once while sailing around the world, he discovered a short cut."},
 {topic_id: 1, quote: "Panhandlers give him money."},
 {topic_id: 1, quote: "When he goes to Spain, he chases the bulls."},

@@ -141,3 +141,33 @@ class Topic < ApplicationRecord
   has_many :facts
 end
 ```
+
+add seed data to `seed.rb` funny shit man!
+
+```Bash
+bin/rake db:migrate
+bin/rails generate active_admin:resource Topic
+bin/rails generate active_admin:resource Fact
+
+
+```
+
+modify app/admin/facts.rb and app/admin/topics.rb
+
+create a `Procfile.dev` in the root and Add
+
+```
+web: PORT=3000 yarn --cwd client start
+api: PORT=3001 bundle exec rails s
+```
+
+```Ruby
+namespace :start do
+  task :development do
+    exec 'heroku local -f Procfile.dev'
+  end
+end
+
+desc 'Start development server'
+task :start => 'start:development'
+```
