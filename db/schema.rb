@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 2019_04_02_214535) do
   create_table "facts", force: :cascade do |t|
     t.bigint "topic_id"
     t.string "quote"
+    t.string "author", default: "The Most Interesting Man in the World"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["topic_id"], name: "index_facts_on_topic_id"

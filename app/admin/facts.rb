@@ -1,5 +1,5 @@
 ActiveAdmin.register Fact do
-  permit_params :topic_id, :quote
+  permit_params :topic_id, :quote, :author
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #

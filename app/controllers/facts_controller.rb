@@ -46,6 +46,6 @@ class FactsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def fact_params
-      params.require(:fact).permit(:topic_id, :quote)
+      params.require(:fact).permit(:topic_id, :quote, :author)
     end
 end
